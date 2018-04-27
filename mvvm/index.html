@@ -3,14 +3,14 @@
 <html>
 
 <head>
-    <title>mvvm1.2</title>
-    <script src="https://unpkg.com/san@latest"></script>
+<title>mvvm1.2</title>
+<script src="https://unpkg.com/san@latest"></script>
 </head>
 
 <body>
-    <script>
+<script>
 var MyApp = san.defineComponent({
-    template: '<p>{{name}}</p>',
+    template: '<h1>{{name}}</h1>',
 
     initData: function () {
         return {
@@ -19,10 +19,9 @@ var MyApp = san.defineComponent({
     }
 });
 
-
 var myApp = new MyApp();
 myApp.attach(document.body);
-    </script>
+</script>
 </body>
 
 </html>
