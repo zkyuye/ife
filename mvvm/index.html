@@ -3,27 +3,25 @@
 <html>
 
 <head>
-    <title>Quick Start</title>
+    <title>mvvm1.2</title>
     <script src="https://unpkg.com/san@latest"></script>
 </head>
 
 <body>
     <script>
-        const MyApp = san.defineComponent({
-            template: `
-                <div>
-                    <input type="text" value="{=name=}">
-                    <p>Hello {{name}}!</p>
-                </div>
-            `
-        });
+var MyApp = san.defineComponent({
+    template: '<p>{{name}}!</p>',
 
-        let myApp = new MyApp({
-            data: {
-                name: 'San'
-            }
-        });
-        myApp.attach(document.body);
+    initData: function () {
+        return {
+            name: 'hello world'
+        };
+    }
+});
+
+
+var myApp = new MyApp();
+myApp.attach(document.body);
     </script>
 </body>
 
