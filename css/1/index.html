@@ -18,12 +18,17 @@
 </body>
 <script>
   var myaa=document.getElementById("aaa");
+var mynn=myaa.className;
  var mybb=document.getElementById("bbb");
 	mybb.onclick=function(){
-		
+		if (mynn=="ccc"){
 			myaa.classList.remove("ccc");
 			myaa.classList.add("ddd");
-	
+		}
+		else {
+		myaa.classList.remove("ddd");
+			myaa.classList.add("ccc");
+		}
 	}
   </script>
 </html>
