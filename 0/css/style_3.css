@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+h1{
+	width: 150px;
+	height: 780px;
+	float: left;
+	background-color: skyblue;
+	margin-top: 0px;
+	text-align: center;
+	line-height: 200px;
+	font: 微软雅黑;
+	color: aliceblue;
+	margin-right: 20px;
+}
+h2{
+	padding-top: 20px;
+}
